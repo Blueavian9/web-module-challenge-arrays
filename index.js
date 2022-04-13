@@ -46,10 +46,10 @@ Use the copy function below to do the following:
 */
 
 
-function copy(originalFlavors){
-  return result;
+function copy(array){
+  return [...array];
 }
-
+console.log("Task 1:", copy(originalFlavors));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -63,9 +63,13 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-  /*your code here*/
- }
+function is31Flavors(array){
+  if(array.length === 31){
+  }else{
+    return true;
+  }
+
+ console.log("Task 2:", is31Flavors(originalFlavors));
 
 
 
@@ -82,9 +86,12 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-  /*your code here*/
- }
+function addFlavor(array, string){
+  array.unshift(string)
+  return array;
+}
+
+console.log("Task 3:", addFlavor(originalFlavors, 'Rainbow Sherbert'));
 
 
 
@@ -100,9 +107,12 @@ Use the removeLastFlavor function below to do the following:
 */
 
 
-function removeLastFlavor(/*your code here*/){
- /*your code here*/
+function removeLastFlavor(array){
+  array.pop()
+  return array; 
 }
+
+console.log("Task 4:", removeLastFlavor(originalFlavors));
 
 
 
@@ -303,5 +313,5 @@ module.exports = {
   filterByWord,
   getAverageWordLength,
   getRandomFlavors
-}
-
+  }
+ }
